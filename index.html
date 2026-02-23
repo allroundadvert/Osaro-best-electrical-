@@ -63,13 +63,27 @@ body {
     color: #ffd700;
 }
 
-/* BOX */
-.box {
-    background: #0b0b0b;
+/* SERVICES GRID */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-box {
+    background: linear-gradient(145deg, #0b0b0b, #020202);
     border: 1px solid #d4af37;
     border-radius: 14px;
     padding: 22px;
-    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(212,175,55,0.25);
+    transition: 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(212,175,55,0.8);
 }
 
 /* FORM */
@@ -145,6 +159,20 @@ href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%2
 <a class="call-btn" href="tel:08077063558">📞 Call Us</a>
 </div>
 
+<!-- SERVICES DISPLAY -->
+<div class="section">
+<h2>Our Core Services</h2>
+<div class="services">
+<div class="service-box">🎬 Video Advertisement</div>
+<div class="service-box">🤖 AI Video Advertisement</div>
+<div class="service-box">📻 Radio Advertisement</div>
+<div class="service-box">📺 TV & ITV Advertisement</div>
+<div class="service-box">🖼 Outdoor Billboard Ads</div>
+<div class="service-box">🎧 Audio Advertisement</div>
+<div class="service-box">🌐 Open a Website for My Business</div>
+</div>
+</div>
+
 <!-- CLIENT FORM -->
 <div class="section">
 <h2>Submit Advert Details</h2>
@@ -154,16 +182,20 @@ href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%2
 <input id="business" placeholder="Business / Brand Name" required>
 <input id="address" placeholder="Business Address" required>
 
-<select id="service">
+<select id="service" onchange="toggleWebsiteField()">
 <option>Video Advertisement</option>
 <option>AI Video Advertisement</option>
 <option>Radio Advertisement</option>
 <option>TV / ITV Advertisement</option>
 <option>Outdoor Advertisement</option>
 <option>Audio Advertisement</option>
+<option>Open a Website for My Business</option>
 </select>
 
 <textarea id="message" rows="4" placeholder="Advert details"></textarea>
+
+<!-- NEW WEBSITE DETAILS FIELD -->
+<textarea id="websiteDetails" rows="3" placeholder="Website Details / Requirements" style="display:none;"></textarea>
 
 <input id="amount" placeholder="Amount Paid (₦)" required>
 <input id="reference" placeholder="Payment Reference / Narration" required>
@@ -172,7 +204,7 @@ href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%2
 </form>
 </div>
 
-<!-- PAYMENT INFO (Moved to Bottom) -->
+<!-- PAYMENT INFO AT BOTTOM -->
 <div class="section">
 <h2>Payment Information</h2>
 
@@ -201,6 +233,7 @@ Please make your payment and submit your payment reference above.
 <th>Name</th>
 <th>Business</th>
 <th>Service</th>
+<th>Website Details</th>
 <th>Amount</th>
 <th>Reference</th>
 </tr>
@@ -216,12 +249,21 @@ Please make your payment and submit your payment reference above.
 <script>
 const ADMIN_PIN = "2026"; // change this
 
+// Show website details field only when website service is selected
+function toggleWebsiteField() {
+    const service = document.getElementById("service").value;
+    document.getElementById("websiteDetails").style.display =
+        service === "Open a Website for My Business" ? "block" : "none";
+}
+
+// Submit form and save to localStorage + open WhatsApp
 function submitForm() {
     const data = {
         name: name.value,
         business: business.value,
         address: address.value,
         service: service.value,
+        website: websiteDetails.value,
         amount: amount.value,
         reference: reference.value
     };
@@ -237,6 +279,7 @@ Name: ${data.name}
 Business: ${data.business}
 Address: ${data.address}
 Service: ${data.service}
+Website Details: ${data.website}
 Amount: ₦${data.amount}
 Reference: ${data.reference}
 Details: ${message.value}`;
@@ -261,6 +304,7 @@ function loadDashboard() {
             <td>${r.name}</td>
             <td>${r.business}</td>
             <td>${r.service}</td>
+            <td>${r.website || "-"}</td>
             <td>₦${r.amount}</td>
             <td>${r.reference}</td>
         </tr>`;
