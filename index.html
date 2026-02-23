@@ -1,236 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>OSARO BEST ELECTRICAL</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIGERIA ALL ROUND ADVERTISEMENT AGENCY</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0b0b0b;
-      color: #f1f1f1;
-      line-height: 1.6;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0b0b;
+    color: #f5f5f5;
+}
 
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #1f1f1f, #f7c600);
-      border-bottom: 5px solid #f7c600;
-    }
+header {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid gold;
+}
 
-    header h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+header h1 {
+    color: gold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 
-    header p {
-      font-size: 18px;
-      font-weight: bold;
-      color: #ffffff;
-      margin-top: 10px;
-    }
+header p {
+    color: #ddd;
+    font-size: 16px;
+}
 
-    .address {
-      margin-top: 12px;
-      font-size: 16px;
-      font-weight: 600;
-    }
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
 
-    /* SLIDER */
-    .slider {
-      width: 100%;
-      max-width: 1200px;
-      margin: 20px auto;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    }
+.section {
+    background: #121212;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+}
 
-    .slides {
-      display: flex;
-      width: 400%;
-      animation: slide 12s infinite;
-    }
+.section h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
 
-    .slides a {
-      width: 25%;
-      display: block;
-    }
+label {
+    font-weight: bold;
+    color: #ccc;
+}
 
-    .slides img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+input, textarea, select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+}
 
-    @keyframes slide {
-      0% { transform: translateX(0); }
-      20% { transform: translateX(-25%); }
-      40% { transform: translateX(-50%); }
-      60% { transform: translateX(-75%); }
-      80% { transform: translateX(0); }
-      100% { transform: translateX(0); }
-    }
+textarea {
+    resize: none;
+}
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
+button {
+    width: 100%;
+    padding: 16px;
+    background: gold;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-    h2 {
-      color: #f7c600;
-      margin-top: 30px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+button:hover {
+    background: #e6c200;
+}
 
-    /* GALLERY */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
+.contact-buttons a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
 
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-      transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-    }
+.call { background: #198754; }
+.whatsapp { background: #25D366; }
+.email { background: #0d6efd; }
+.facebook { background: #1877f2; }
+.tiktok { background: #000; border: 1px solid gold; }
 
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
-    }
+footer {
+    background: #000;
+    text-align: center;
+    padding: 18px;
+    border-top: 2px solid gold;
+    color: #aaa;
+}
+</style>
 
-    /* CTA BUTTONS */
-    .cta-buttons {
-      text-align: center;
-      margin: 40px 0;
-    }
+<script>
+function sendToWhatsApp() {
+    var advertType = document.getElementById("advertType").value;
+    var businessName = document.getElementById("businessName").value;
+    var address = document.getElementById("address").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var description = document.getElementById("description").value;
+    var aiStyle = document.getElementById("aiStyle").value;
+    var aiDuration = document.getElementById("aiDuration").value;
+    var aiVoice = document.getElementById("aiVoice").value;
 
-    .cta-buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 30px;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+    var message =
+        "NEW ADVERT REQUEST%n%n" +
+        "Advert Type: " + advertType + "%n" +
+        "Business Name: " + businessName + "%n" +
+        "Address: " + address + "%n" +
+        "Phone: " + phone + "%n" +
+        "Email: " + email + "%n%n" +
+        "Business Description:%n" + description + "%n%n" +
+        "AI Video Details:%n" +
+        "Style: " + aiStyle + "%n" +
+        "Duration: " + aiDuration + "%n" +
+        "Voice Preference: " + aiVoice;
 
-    .whatsapp-btn {
-      background-color: #25d366;
-      color: #000;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebe5d;
-      color: #fff;
-    }
-
-    .call-btn {
-      background-color: #1f1f1f;
-      color: #fff;
-      border: 2px solid #f7c600;
-    }
-
-    .call-btn:hover {
-      background-color: #f7c600;
-      color: #000;
-    }
-
-    .facebook-btn {
-      background-color: #1877f2;
-      color: #fff;
-    }
-
-    .facebook-btn:hover {
-      background-color: #0f5ed7;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1f1f1f;
-      color: #f1f1f1;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-  </style>
+    var url = "https://wa.me/2348077063558?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+</script>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>OSARO BEST ELECTRICAL</h1>
-    <p>
-      Your trusted source for <strong>high-quality electrical materials from A to Z</strong>.  
-      Cables, switches, sockets, panels, fittings, tools, lighting accessories and more.
-    </p>
-    <div class="address">
-      📍 Upper Ekewan Barracks Gate, Close to Silver Green School, Benin City, Edo State
-    </div>
-  </header>
+<header>
+    <h1>NIGERIA ALL ROUND ADVERTISEMENT AGENCY</h1>
+    <p>Your One-Stop Solution for Audio, Video, AI, TV, Radio & Outdoor Advertising</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <!-- SLIDER -->
-    <div class="slider">
-      <div class="slides">
-        <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20electrical%20materials%20I%20saw%20online" target="_blank">
-          <img src="https://via.placeholder.com/1200x600?text=Electrical+Materials+1">
-        </a>
-        <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20electrical%20materials%20I%20saw%20online" target="_blank">
-          <img src="https://via.placeholder.com/1200x600?text=Electrical+Materials+2">
-        </a>
-        <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20electrical%20materials%20I%20saw%20online" target="_blank">
-          <img src="https://via.placeholder.com/1200x600?text=Electrical+Materials+3">
-        </a>
-        <a href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20electrical%20materials%20I%20saw%20online" target="_blank">
-          <img src="https://via.placeholder.com/1200x600?text=Electrical+Materials+4">
-        </a>
-      </div>
+    <!-- Advert Type -->
+    <div class="section">
+        <h2>Select Advertisement Type</h2>
+        <select id="advertType">
+            <option>Audio Advert</option>
+            <option>Video Advert</option>
+            <option>AI Video Advert</option>
+            <option>TV Advert</option>
+            <option>Radio Advert</option>
+            <option>Outdoor Advert</option>
+            <option>Online / ITV Advert</option>
+        </select>
     </div>
 
-    <!-- PRODUCTS -->
-    <h2>Our Electrical Products</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/600x600?text=Cables+and+Wires">
-      <img src="https://via.placeholder.com/600x600?text=Switches+and+Sockets">
-      <img src="https://via.placeholder.com/600x600?text=Circuit+Breakers">
-      <img src="https://via.placeholder.com/600x600?text=Lighting+Fittings">
+    <!-- Client Info -->
+    <div class="section">
+        <h2>Client Information</h2>
+
+        <label>Business Name</label>
+        <input id="businessName" type="text" placeholder="Your business name">
+
+        <label>Business Address</label>
+        <input id="address" type="text" placeholder="Business address">
+
+        <label>Phone Number</label>
+        <input id="phone" type="tel" placeholder="Phone number">
+
+        <label>Email Address</label>
+        <input id="email" type="email" placeholder="Email address">
+
+        <label>What do you sell?</label>
+        <textarea id="description" rows="4" placeholder="Brief description of your product or service"></textarea>
     </div>
 
-    <!-- CTA BUTTONS -->
-    <div class="cta-buttons">
-      <a class="whatsapp-btn" href="https://wa.me/2348035831839?text=I%20am%20interested%20in%20your%20electrical%20materials%20I%20saw%20online" target="_blank">
-        💬 Chat on WhatsApp
-      </a>
-      <a class="call-btn" href="tel:08035831839">
-        📞 Call Now
-      </a>
-      <a class="facebook-btn" href="https://www.facebook.com/share/1AX8dNDpmA/" target="_blank">
-        📘 Visit Facebook
-      </a>
+    <!-- AI Video Advert Section -->
+    <div class="section">
+        <h2>AI Video Advert Request</h2>
+
+        <label>Preferred AI Video Style</label>
+        <select id="aiStyle">
+            <option>Realistic</option>
+            <option>Animated</option>
+            <option>Explainer</option>
+            <option>Luxury / Cinematic</option>
+            <option>Social Media Viral</option>
+        </select>
+
+        <label>Video Duration</label>
+        <select id="aiDuration">
+            <option>8 Seconds</option>
+            <option>15 Seconds</option>
+            <option>30 Seconds</option>
+            <option>60 Seconds</option>
+        </select>
+
+        <label>Voice Preference</label>
+        <select id="aiVoice">
+            <option>Male Voice</option>
+            <option>Female Voice</option>
+            <option>No Voice (Text Only)</option>
+        </select>
     </div>
 
-  </div>
+    <!-- Submit -->
+    <div class="section">
+        <button onclick="sendToWhatsApp()">Submit & Send to WhatsApp</button>
+    </div>
 
-  <footer>
-    © 2026 OSARO BEST ELECTRICAL • Quality Electrical Materials From A to Z <br>
-    📍 Upper Ekewan Barracks Gate, Close to Silver Green School, Benin City, Edo State
-  </footer>
+    <!-- Contact Buttons -->
+    <div class="section">
+        <h2>Contact Us Instantly</h2>
+
+        <div class="contact-buttons">
+            <a href="tel:08077063558" class="call">📞 Call: 08077063558</a>
+            <a href="https://wa.me/2348077063558" class="whatsapp">💬 WhatsApp Us</a>
+            <a href="mailto:worshipmove@gmail.com" class="email">📧 Email Us</a>
+            <a href="https://www.facebook.com/Nijabussinesstalkshow?mibextid=ZbWKwL" class="facebook">📘 Facebook</a>
+            <a href="https://www.tiktok.com/@nollywoodprince1?_r=1&_t=ZS-94ATMeTTnYW" class="tiktok">🎵 TikTok</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 | NIGERIA ALL ROUND ADVERTISEMENT AGENCY</p>
+</footer>
 
 </body>
 </html>
