@@ -6,13 +6,8 @@
 
 <title>Nigeria All Round Advertisement Agency</title>
 
-<meta name="description" content="Nigeria All Round Advertisement Agency – Premium Audio, Video, AI Video, TV, Radio & Outdoor Advertising Solutions.">
-
 <style>
-/* ===== GLOBAL ===== */
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -21,22 +16,21 @@ body {
     color: #f5d77a;
 }
 
-/* ===== TOP IMAGE (REDUCED & RESPONSIVE) ===== */
+/* TOP IMAGE */
 .top-banner img {
     width: 100%;
-    height: 220px;           /* reduced size */
-    object-fit: contain;     /* fit to screen */
+    height: 220px;
+    object-fit: contain;
     background: #000;
     border-bottom: 3px solid #d4af37;
 }
 
-/* ===== BUTTON BAR ===== */
+/* BUTTONS */
 .action-buttons {
     display: flex;
     justify-content: center;
     gap: 18px;
     padding: 22px;
-    background: linear-gradient(to bottom, #000, #050505);
 }
 
 .action-buttons a {
@@ -44,8 +38,6 @@ body {
     padding: 14px 26px;
     border-radius: 50px;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    transition: 0.3s ease;
     box-shadow: 0 0 12px rgba(212,175,55,0.7);
 }
 
@@ -59,12 +51,7 @@ body {
     color: #000;
 }
 
-.action-buttons a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 0 20px rgba(212,175,55,1);
-}
-
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 .section {
     max-width: 950px;
     margin: auto;
@@ -73,45 +60,23 @@ body {
 
 .section h2 {
     text-align: center;
-    font-size: 26px;
-    margin-bottom: 18px;
     color: #ffd700;
 }
 
-.section p {
-    text-align: center;
-    line-height: 1.7;
-    color: #e6c96f;
-}
-
-/* ===== SERVICES ===== */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.service-box {
-    background: linear-gradient(145deg, #0b0b0b, #020202);
+/* BOX */
+.box {
+    background: #0b0b0b;
     border: 1px solid #d4af37;
     border-radius: 14px;
     padding: 22px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(212,175,55,0.25);
-    transition: 0.3s ease;
+    margin-top: 20px;
 }
 
-.service-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 25px rgba(212,175,55,0.8);
-}
-
-/* ===== FORM ===== */
+/* FORM */
 form {
-    margin-top: 30px;
     display: grid;
     gap: 16px;
+    margin-top: 20px;
 }
 
 input, select, textarea {
@@ -120,40 +85,46 @@ input, select, textarea {
     border: none;
     background: #0c0c0c;
     color: gold;
-    font-size: 15px;
-    box-shadow: inset 0 0 6px rgba(212,175,55,0.4);
-}
-
-textarea {
-    resize: none;
 }
 
 button {
-    margin-top: 10px;
     padding: 15px;
     border-radius: 50px;
     border: none;
     background: linear-gradient(45deg, #ffd700, #b8962e);
     color: #000;
-    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 18px rgba(212,175,55,0.9);
-    transition: 0.3s ease;
 }
 
-button:hover {
-    transform: scale(1.05);
+/* ADMIN DASHBOARD */
+#adminDashboard {
+    display: none;
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 50px;
-    padding: 22px;
-    text-align: center;
-    border-top: 2px solid #d4af37;
-    color: #c9ab4b;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #d4af37;
+    padding: 10px;
+    text-align: left;
     font-size: 14px;
+}
+
+th {
+    background: #111;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 22px;
+    border-top: 2px solid #d4af37;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -162,54 +133,41 @@ footer {
 
 <!-- TOP IMAGE -->
 <div class="top-banner">
-<img src="https://raw.githubusercontent.com/allroundadvert/NIGERIA-ALL-ROUND-ADVERTISEMENT-AGENCIES-/96a25eb995ccb8a0e9a06d992ec231890df848f1/Screenshot_20260223-204747.jpg"
-alt="Nigeria All Round Advertisement Agency">
+<img src="https://raw.githubusercontent.com/allroundadvert/NIGERIA-ALL-ROUND-ADVERTISEMENT-AGENCIES-/96a25eb995ccb8a0e9a06d992ec231890df848f1/Screenshot_20260223-204747.jpg">
 </div>
 
 <!-- BUTTONS -->
 <div class="action-buttons">
 <a class="whatsapp-btn" target="_blank"
-href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%20advertisement%20services%20I%20saw%20online">
+href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%20advertisement%20services">
 💬 WhatsApp Us
 </a>
-
-<a class="call-btn" href="tel:08077063558">
-📞 Call Us
-</a>
+<a class="call-btn" href="tel:08077063558">📞 Call Us</a>
 </div>
 
-<!-- INTRO -->
+<!-- PAYMENT INFO -->
 <div class="section">
-<h2>Nigeria All Round Advertisement Agency</h2>
-<p>
-Premium advertising solutions — Audio, Video, AI Video, TV, Radio, ITV and Outdoor Ads
-that give your brand strong visibility across Nigeria.
-</p>
+<h2>Payment Information</h2>
+
+<div class="box">
+<p><strong>Bank:</strong> OPay</p>
+<p><strong>Account Number:</strong> 8145891674</p>
+<p><strong>Account Name:</strong> Uyi Mike Madojemu</p>
+<hr style="border-color:#d4af37;">
+<p><strong>Bank:</strong> Polaris Bank</p>
+<p><strong>Account Number:</strong> 3050312834</p>
+<p><strong>Account Name:</strong> Uyi Mike Madojemu</p>
+</div>
 </div>
 
-<!-- SERVICES -->
+<!-- CLIENT FORM -->
 <div class="section">
-<h2>Our Core Services</h2>
-<div class="services">
-<div class="service-box">🎬 Video Advertisement</div>
-<div class="service-box">🤖 AI Video Advertisement</div>
-<div class="service-box">📻 Radio Advertisement</div>
-<div class="service-box">📺 TV & ITV Advertisement</div>
-<div class="service-box">🖼 Outdoor Billboard Ads</div>
-<div class="service-box">🎧 Audio Advertisement</div>
-</div>
-</div>
+<h2>Submit Advert & Payment Details</h2>
 
-<!-- FORM -->
-<div class="section">
-<h2>Request an Advertisement</h2>
-
-<form onsubmit="sendToWhatsApp(); return false;">
-<input id="name" type="text" placeholder="Your Full Name" required>
-<input id="business" type="text" placeholder="Business / Brand Name" required>
-
-<!-- NEW ADDRESS FIELD -->
-<input id="address" type="text" placeholder="Business / Office Address" required>
+<form onsubmit="submitForm(); return false;">
+<input id="name" placeholder="Your Full Name" required>
+<input id="business" placeholder="Business / Brand Name" required>
+<input id="address" placeholder="Business Address" required>
 
 <select id="service">
 <option>Video Advertisement</option>
@@ -220,33 +178,94 @@ that give your brand strong visibility across Nigeria.
 <option>Audio Advertisement</option>
 </select>
 
-<textarea id="message" rows="4" placeholder="Describe your advert request"></textarea>
+<input id="amount" placeholder="Amount Paid (₦)" required>
+<input id="reference" placeholder="Payment Reference / Narration" required>
 
-<button type="submit">Send Request via WhatsApp</button>
+<textarea id="message" rows="4" placeholder="Advert details"></textarea>
+
+<button type="submit">Send Details</button>
 </form>
 </div>
 
+<!-- ADMIN DASHBOARD -->
+<div class="section" id="adminDashboard">
+<h2>Admin Dashboard</h2>
+<p>Saved submissions (this device only)</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Business</th>
+<th>Service</th>
+<th>Amount</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody id="dashboardData"></tbody>
+</table>
+</div>
+
 <footer>
-© 2026 Nigeria All Round Advertisement Agency — Premium Advertising Solutions
+© 2026 Nigeria All Round Advertisement Agency
 </footer>
 
 <script>
-function sendToWhatsApp() {
-    const name = document.getElementById("name").value;
-    const business = document.getElementById("business").value;
-    const address = document.getElementById("address").value;
-    const service = document.getElementById("service").value;
-    const message = document.getElementById("message").value;
+const ADMIN_PIN = "2026"; // change this
+
+function submitForm() {
+    const data = {
+        name: name.value,
+        business: business.value,
+        address: address.value,
+        service: service.value,
+        amount: amount.value,
+        reference: reference.value
+    };
+
+    let records = JSON.parse(localStorage.getItem("records")) || [];
+    records.push(data);
+    localStorage.setItem("records", JSON.stringify(records));
 
     const text =
-        "Hello, my name is " + name +
-        ". Business Name: " + business +
-        ". Address: " + address +
-        ". Advert Type: " + service +
-        ". Details: " + message;
+`Hello, I have made payment.
 
-    const url = "https://wa.me/2348145891674?text=" + encodeURIComponent(text);
-    window.open(url, "_blank");
+Name: ${data.name}
+Business: ${data.business}
+Address: ${data.address}
+Service: ${data.service}
+Amount: ₦${data.amount}
+Reference: ${data.reference}
+Details: ${message.value}`;
+
+    window.open("https://wa.me/2348145891674?text=" + encodeURIComponent(text), "_blank");
+}
+
+function loadDashboard() {
+    const pin = prompt("Enter Admin PIN:");
+    if (pin !== ADMIN_PIN) return;
+
+    document.getElementById("adminDashboard").style.display = "block";
+
+    const records = JSON.parse(localStorage.getItem("records")) || [];
+    const tbody = document.getElementById("dashboardData");
+    tbody.innerHTML = "";
+
+    records.forEach(r => {
+        tbody.innerHTML += `
+        <tr>
+            <td>${r.name}</td>
+            <td>${r.business}</td>
+            <td>${r.service}</td>
+            <td>₦${r.amount}</td>
+            <td>${r.reference}</td>
+        </tr>`;
+    });
+}
+
+/* Open dashboard with URL #admin */
+if (location.hash === "#admin") {
+    loadDashboard();
 }
 </script>
 
